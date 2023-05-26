@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
 import Banner from '../components/Banner/Banner'
 import Cards from '../components/Card/Cards'
 import Testimonials from '../components/Testimonials/Testimonials'
@@ -15,10 +14,7 @@ const home = () => {
     <ResponsiveAppBar/>
    <Banner />
    <Cards/>
-   
-
    <FAQS></FAQS>
-
    <Testimonials/>
    <Footer/>
    </div>
