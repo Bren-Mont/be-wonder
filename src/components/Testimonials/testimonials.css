@@ -1,0 +1,56 @@
+.container-t{
+  background-color: #2c327814;
+  padding: 20px 0px 100px;
+}
+
+.testimonials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  column-gap: 100px;
+  position: relative;
+  text-align: center;
+  background-image: url("https://ftpdemo.com/introz/wp-content/uploads/2022/09/shape-66.png");
+  background-repeat: no-repeat;
+  animation: backgroundAnimation 10s infinite;
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.testimonials-media {
+  max-width: 400px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.text-testimonials{
+  color: #2c3278;
+
+}
+.img-testimonials .testimonials-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.title-home{
+  margin-top: 100px;
+  text-align: center;
+  text-transform: none;
+  color: #c03532;
+  font-size: 40px;
+  
+}
+
+
+
+
