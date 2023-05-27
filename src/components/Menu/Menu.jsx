@@ -1,4 +1,12 @@
-import React, { useState } from "react";
+import React from 'react'
+
+export const Menu = () => {
+  return (
+    <div>Menu</div>
+  )
+}
+
+/* import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
@@ -131,3 +139,4 @@ const MyDrawer = ({isOpen, setIsOpen}) => {
 };
 
 export default MyDrawer;
+ */
