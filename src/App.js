@@ -1,12 +1,16 @@
-import React from 'react';
-import './App.css';
-import Home from'./Pages/Home';
+import React from "react";
+import { ThemeProvider, createTheme } from "@mui/material";
 
+import "./App.css";
+import Home from "./Pages/Home";
+import { customTheme } from "./shared/theme/constants";
+
+const theme = createTheme(customTheme);
 function App() {
   return (
-    <div className="App">
-      <Home></Home>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Home />
+    </ThemeProvider>
   );
 }
 

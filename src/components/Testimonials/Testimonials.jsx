@@ -1,38 +1,63 @@
 import * as React from "react";
 import "./testimonials.css";
 import { testimonials } from "./const-testimonials";
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { Avatar, CardActionArea } from '@mui/material';
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
+import Typography from "@mui/material/Typography";
+import {
+  Avatar,
+  CardActionArea,
+  CardHeader,
+  Container,
+  Grid,
+  IconButton,
+} from "@mui/material";
+import { red } from "@mui/material/colors";
 
 export default function Testimonials({ id, name, text, image }) {
   return (
-    <div className="container-t">
-      <h1 className='title-home'>Testimonios</h1>
-   
-    <div className="testimonials" >
-      
-      {testimonials.map(({id, name, text,image}) => (
-          <Card sx={{ maxWidth: 345 }} key={id}>
-            <CardActionArea>
-              <CardContent  className="testtimonials-content">
-                <Typography className="text-testimonials" >
-                  {text}
-                </Typography> <br />
-                <div style={{ display: 'flex', alignItems: 'center'}}>
-                <Avatar  sx={{ width: 70, height: 70 }} alt="Remy Sharp" src={image} />
-               
-                <Typography className='title-testimonials' gutterBottom variant='h5' component='div' style={{ padding:10}}>
-                  {name}
-                </Typography>
-                </div>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-      ))}
-    </div>
-    </div>
+    <Container sx={{ marginBottom: 5 }}>
+      <Typography
+        variant="h2"
+        textAlign="center"
+        color="secondary"
+        fontWeight="900"
+      >
+        Testimonios
+      </Typography>
+      <Grid container spacing={2} alignItems="center" justifyContent="center">
+        {testimonials.map(({ id, title, image, text }) => (
+          <Grid
+            item
+            xs={12}
+            md={4}
+            key={id}
+            style={{ display: "flex", alignSelf: "stretch" }}
+          >
+            <Card sx={{ width: "100%" }}>
+              <CardHeader
+                avatar={
+                  <Avatar
+                    sx={{ bgcolor: red[500] }}
+                    aria-label="recipe"
+                    src={image}
+                  >
+                    R
+                  </Avatar>
+                }
+                action={
+                  <IconButton aria-label="settings">
+                    <FormatQuoteIcon />
+                  </IconButton>
+                }
+                title="Shrimp and Chorizo Paella"
+                subheader="September 14, 2016"
+              />
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+    </Container>
   );
 }

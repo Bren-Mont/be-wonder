@@ -1,4 +1,4 @@
-.contenedor{
+.contenedor {
   background-image: url("https://ftpdemo.com/introz/wp-content/uploads/2022/09/shape-66.png");
   background-repeat: no-repeat;
 }
@@ -12,7 +12,6 @@
   flex-wrap: wrap;
   background-repeat: no-repeat;
   background-position: right;
-
 }
 
 .pattern-layer-2 {
@@ -25,21 +24,18 @@
   flex-direction: row;
   flex-wrap: wrap;
   background-size: contain;
-  
 }
 
-.contenedor .pattern-layer-1  .pattern-layer-2 div{
+.contenedor .pattern-layer-1 .pattern-layer-2 div {
   width: 50%;
 }
 
-.contenedor .pattern-layer-1  .pattern-layer-2 img{
- margin-top: 200px;
- 
+.contenedor .pattern-layer-1 .pattern-layer-2 img {
+  margin-top: 200px;
 }
 .title-word {
   animation: color-animation 4s linear infinite;
 }
-
 
 .title-word-1 {
   --color-1: #2c3278;
@@ -49,14 +45,14 @@
 
 .title-word-2 {
   --color-1: #c03532;
-  --color-2: #ACCFCB;
-  --color-3: #17494D;
+  --color-2: #accfcb;
+  --color-3: #17494d;
 }
 
 .title-word-3 {
-  --color-1: #ACCFCB;
+  --color-1: #accfcb;
   --color-2: #2c3278;
-  --color-3: #ACCFCB;
+  --color-3: #accfcb;
 }
 
 .title-word-4 {
@@ -66,13 +62,27 @@
 }
 
 @keyframes color-animation {
-  0%    {color: var(--color-1)}
-  32%   {color: var(--color-1)}
-  33%   {color: var(--color-2)}
-  65%   {color: var(--color-2)}
-  66%   {color: var(--color-3)}
-  99%   {color: var(--color-3)}
-  100%  {color: var(--color-1)}
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
+  }
 }
 
 /* Here are just some visual styles. 🖌 */
@@ -87,10 +97,8 @@
   text-align: left;
   margin-left: 30px;
   margin-top: 100px;
-  font-family: 'Times New Roman', Times, serif;
-  
 }
-h1{
+h1 {
   margin-top: 300px;
   font-size: 5rem;
   text-align: left;

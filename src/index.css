@@ -1,13 +1,35 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+body,
+html {
+  font-family: "Caladea", sans-serif;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.nav-bar--hidden {
+  display: none !important;
+}
+
+@font-face {
+  font-family: "Caladea";
+  src: local("Caladea"),
+    url(./assets/fonts/caladea/Caladea-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Caladea";
+  font-weight: 900;
+  src: local("Caladea"),
+    url(./assets/fonts/caladea/Caladea-Bold.ttf) format("truetype");
+}
+
+header .MuiAvatar-img {
+  object-fit: contain !important;
 }
