@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./card.css";
 import { insurances } from "./constants";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -7,7 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, Container, Grid } from "@mui/material";
 
-export default function Cards() {
+export default function Services() {
   return (
     <Container>
       <Typography
