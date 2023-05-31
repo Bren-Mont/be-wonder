@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../components/Banner/Banner";
-import Cards from "../components/Card/Cards";
+import Services from "../components/Services/Services";
 import Testimonials from "../components/Testimonials/Testimonials";
 import "./home.css";
 import FAQS from "../components/FAQ/FAQS";
@@ -13,7 +13,7 @@ const home = () => {
       <ResponsiveAppBar />
       {/* <Banner /> */}
 
-      <Cards />
+      <Services />
       <FAQS></FAQS>
       <Testimonials />
       <Footer />
