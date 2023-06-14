@@ -6,18 +6,18 @@ import "./home.css";
 import FAQS from "../components/FAQ/FAQS";
 import Footer from "../components/Footer/Footer";
 import ResponsiveAppBar from "../components/Navbar/Navbar";
+import { Box } from "@mui/material";
 
 const home = () => {
   return (
-    <>
+    <Box>
       <ResponsiveAppBar />
-      {/* <Banner /> */}
-
+      <Banner />
       <Services />
       <FAQS></FAQS>
       <Testimonials />
       <Footer />
-    </>
+    </Box>
   );
 };
 

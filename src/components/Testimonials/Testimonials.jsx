@@ -2,17 +2,9 @@ import * as React from "react";
 import "./testimonials.css";
 import { testimonials } from "./const-testimonials";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import Typography from "@mui/material/Typography";
-import {
-  Avatar,
-  CardActionArea,
-  CardHeader,
-  Container,
-  Grid,
-  IconButton,
-} from "@mui/material";
+import { Avatar, CardHeader, Container, Grid, IconButton } from "@mui/material";
 import { red } from "@mui/material/colors";
 
 export default function Testimonials({ id, name, text, image }) {
@@ -23,6 +15,7 @@ export default function Testimonials({ id, name, text, image }) {
         textAlign="center"
         color="secondary"
         fontWeight="900"
+        paddingY={5}
       >
         Testimonios
       </Typography>

@@ -57,7 +57,7 @@ function ResponsiveAppBar() {
   }, [scroll.y, scroll.lastY]);
 
   return (
-    <AppBar className={navClassList.join(" ")}>
+    <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Logo />

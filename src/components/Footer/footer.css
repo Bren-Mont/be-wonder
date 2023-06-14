@@ -1,11 +1,11 @@
 .footer {
-  background-color: #2c3278;
+  background-color: #fff;
   padding: 20px 0;
   text-align: center;
 }
 
 .footer-content {
-  color: #fff;
+  color: #2c3278;
 }
 
 .footer-content p {
