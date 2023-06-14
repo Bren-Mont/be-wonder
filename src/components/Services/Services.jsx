@@ -6,7 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, Container, Grid } from "@mui/material";
 
-export default function Services() {
+export default function Services({ drawer }) {
   return (
     <Container>
       <Typography
@@ -55,7 +55,13 @@ export default function Services() {
           </Grid>
         ))}
       </Grid>
-      <Button fullWidth variant="contained" color="primary" sx={{ marginY: 5 }}>
+      <Button
+        fullWidth
+        variant="contained"
+        color="primary"
+        sx={{ marginY: 5 }}
+        onClick={() => drawer.setShowDrawer(true)}
+      >
         Quiero cotizar
       </Button>
     </Container>

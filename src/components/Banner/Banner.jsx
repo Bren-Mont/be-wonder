@@ -1,7 +1,7 @@
 import React from "react";
 import "./banner.css";
 import { Box, Button, Grid, Typography } from "@mui/material";
-const Banner = () => {
+const Banner = ({ drawer }) => {
   return (
     <Box>
       <Grid container spacing={2} alignItems="center">
@@ -36,8 +36,18 @@ const Banner = () => {
               ¡Protege lo que más valoras con nuestro servicio de seguros!
             </Typography>
           </Grid>
-          <Grid item xs={12} marginLeft={{ xs: 2, md: 3 }} marginTop={2}>
-            <Button variant="contained" color="secondary">
+          <Grid
+            item
+            xs={12}
+            marginLeft={{ xs: 2, md: 3 }}
+            marginTop={2}
+            display={{ xs: "none", md: "flex" }}
+          >
+            <Button
+              variant="contained"
+              color="secondary"
+              onClick={() => drawer.setShowDrawer(true)}
+            >
               Cotizar
             </Button>
           </Grid>

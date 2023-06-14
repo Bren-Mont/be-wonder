@@ -30,8 +30,8 @@ const home = () => {
   return (
     <Box>
       <ResponsiveAppBar drawer={drawer} />
-      <Banner />
-      <Services />
+      <Banner drawer={drawer} />
+      <Services drawer={drawer} />
       <FAQS></FAQS>
       <Testimonials />
       <Footer />
