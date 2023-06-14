@@ -43,7 +43,7 @@ const Logo = ({ sx = { display: { xs: "none", md: "flex" } } }) => (
   />
 );
 
-function ResponsiveAppBar() {
+function ResponsiveAppBar({ drawer }) {
   const scroll = useScrollListener();
   const [navClassList, setNavClassList] = React.useState([]);
 
@@ -74,7 +74,11 @@ function ResponsiveAppBar() {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Solicita tu cotización">
-              <Button variant="contained" color="secondary">
+              <Button
+                variant="contained"
+                color="secondary"
+                onClick={() => drawer.setShowDrawer(true)}
+              >
                 Cotizar
               </Button>
             </Tooltip>
